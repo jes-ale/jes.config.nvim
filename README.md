@@ -7,7 +7,7 @@
 
 ### Requeriments: 
 #### I'm currently using Debian 12 stable
-#### Neovim = 0.9.0 
+#### Neovim = 0.9.1
 ```bash
 sudo apt install snapd
 sudo apt install -beta neovim --classic
