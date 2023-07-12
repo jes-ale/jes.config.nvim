@@ -10,11 +10,18 @@
 #### Neovim = 0.9.1
 ```bash
 sudo apt install snapd
-sudo apt install -beta neovim --classic
 sudo snap install core
-sudo snap install node --classic
 sudo snap install nvim --channel=latest/stable --classic
 sudo apt install python3-neovim
+```
+#### LSPs
+```bash
+sudo su
+curl -fsSL https://deb.nodesource.com/setup_20.x
+sudo apt install -y nodejs
+corepack enable
+pnpm setup
+pnpm install -g typescript typescript-language-server
 ```
 #### [Live grep](https://github.com/BurntSushi/ripgrep)
 #### Standalone binary with no dependencies so we install with dpkg instead of gdebi or other tool.
