@@ -20,7 +20,6 @@ vim.o.timeout = true
 vim.o.timeoutlen = 150
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
-vim.o.termguicolors = true
 -- [[ Uncommented Setting options ]]
 vim.opt.nu = true
 vim.opt.relativenumber = true
