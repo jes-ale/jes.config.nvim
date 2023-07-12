@@ -6,9 +6,10 @@
 ##### - Actively updated and further customizated.
 
 #### Requeriments: 
+##### I'm currently using Debian 12 stable
 ##### Neovim > 0.9.0 < 0.10.0 (until fzf current buffer telescope fixes the deprecated function cuz it's going to breake probably at some point in the near future)
 ```bash
-sudo apt snapd
+sudo apt install snapd
 sudo apt install -beta neovim --classic
 sudo snap install core
 sudo snap install node --classic
