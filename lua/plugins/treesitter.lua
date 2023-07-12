@@ -9,9 +9,24 @@ return {
 	config = function()
 		pcall(require('nvim-treesitter.install').update { with_sync = true })
 		require 'nvim-treesitter.configs'.setup {
-			ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'javascript', 'css',
+			ensure_installed = {
+				'c',
+				'cpp',
+				'go',
+				'lua',
+				'python',
+				'rust',
+				'tsx',
+				'typescript',
+				'javascript',
+				'css',
 				'scss',
-				'json', 'json5', 'vimdoc', 'vim', 'kotlin' },
+				'json',
+				'json5',
+				'vimdoc',
+				'vim',
+				'kotlin',
+				'bash' },
 			auto_install = true,
 			highlight = { enable = true },
 			indent = { enable = true, disable = { 'python' } },

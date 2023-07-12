@@ -34,6 +34,7 @@ return {
 		end
 		local servers = {
 			rust_analyzer = {},
+			bashls = {},
 			tsserver = {},
 			volar = {},
 			lemminx = {},
