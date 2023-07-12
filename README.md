@@ -1,4 +1,4 @@
-##### Personal nvim configuration havely inspired by Kickstart and LazyVim, not only on the plugins selection but the mental model of "plug and play" configurations for certain plugins.
+##### Personal nvim configuration inspired by [Kickstart, LazyVim] plugins and settings.
 
 #### *** Disclaimer *** 
 ##### - For advanced users i do not recomended this configuration unless you like the "simple" file structure i got going on.
