@@ -1,7 +1,8 @@
 local M = {}
 
 M.root_patterns = { ".git", "lua" }
-
+-- NOTE: yanked from LazyVim repo, see todo
+-- TODO: rewrite to return the workspace path always
 function M.get_root()
   ---@type string?
   local path = vim.api.nvim_buf_get_name(0)
@@ -37,13 +38,15 @@ function M.get_root()
   return root
 end
 
+-- NOTE: yanked from LazyVim repo
 function M.fg(name)
   ---@type {foreground?:number}?
   local hl = vim.api.nvim_get_hl and vim.api.nvim_get_hl(0, { name = name }) or vim.api.nvim_get_hl_by_name(name, true)
   local fg = hl and hl.fg or hl.foreground
   return fg and { fg = string.format("#%06x", fg) }
 end
-
+-- NOTE: yanked from LazyVim repo, see todo
+-- TODO: rewrite to use handpicked icons
 M.icons = {
   dap = {
     Stopped = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
