@@ -1,4 +1,5 @@
 -- [[ Commented Setting options ]]
+-- TODO: comment all settings 
 -- Set highlight on search
 vim.o.hlsearch = false
 -- Make line numbers default
