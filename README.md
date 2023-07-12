@@ -2,7 +2,7 @@
 
 #### *** Disclaimer *** 
 ##### - For advanced users i do not recomended this configuration unless you like the "simple" file structure i got going on.
-##### - The configurations and specialy the keymaps are strongly opininated.
+##### - The configurations and the keymaps are strongly opininated.
 ##### - Actively updated and further customizated.
 
 ### Requeriments: 
