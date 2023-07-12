@@ -5,7 +5,7 @@
 ##### - The configurations and specialy the keymaps are strongly opininated.
 ##### - Actively updated and further customizated.
 
-### Requeriments: 
+#### Requeriments: 
 ##### Neovim > 0.9.0 < 0.10.0 (until fzf current buffer telescope fixes the deprecated function cuz it's going to breake probably at some point in the near future)
 ```bash
 sudo apt snapd
