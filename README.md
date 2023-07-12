@@ -14,8 +14,16 @@ sudo snap install node --classic
 sudo snap install nvim --channel=latest/stable --classic
 sudo apt install python3-neovim
 ```
-### [Live grep] (https://github.com/BurntSushi/ripgrep)https://github.com/BurntSushi/ripgrep)
-#### [File search] (https://github.com/sharkdp/fd)https://github.com/sharkdp/fd)
+### [Live grep](https://github.com/BurntSushi/ripgrep)
+Standalone binary with no dependencies so we install with dpkg instead of gdebi or other tool.
+```bash
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
+```
+#### [File search](https://github.com/sharkdp/fd)
+```bash
+sudo apt install fd-find
+```
 ### C compiler for treesitter (fzf)
 ```bash
 sudo apt install gcc
