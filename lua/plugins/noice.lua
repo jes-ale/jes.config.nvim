@@ -29,7 +29,6 @@ return {
 			inc_rename = true,
 		},
 	},
-	-- stylua: ignore
 	keys = {
 		{
 			"<S-Enter>",
@@ -39,25 +38,25 @@ return {
 			"Redirect Cmdline"
 		},
 		{
-			"<leader>snl",
+			"<leader>unl",
 			function() require("noice").cmd("last") end,
 			desc =
 			"Noice Last Message"
 		},
 		{
-			"<leader>snh",
+			"<leader>unh",
 			function() require("noice").cmd("history") end,
 			desc =
 			"Noice History"
 		},
 		{
-			"<leader>sna",
+			"<leader>una",
 			function() require("noice").cmd("all") end,
 			desc =
 			"Noice All"
 		},
 		{
-			"<leader>snd",
+			"<leader>und",
 			function() require("noice").cmd("dismiss") end,
 			desc =
 			"Dismiss All"
@@ -67,7 +66,7 @@ return {
 			function() if not require("noice.lsp").scroll(4) then return "<c-f>" end end,
 			silent = true,
 			expr = true,
-  		desc =
+			desc =
 			"Scroll forward",
 			mode = {
 				"i", "n", "s" }

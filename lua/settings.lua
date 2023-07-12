@@ -58,10 +58,10 @@ vim.keymap.set('n', "K", ":m '<-2<CR>gv=gv", { desc = 'Drag up' })
 vim.keymap.set('n', "<C-d>", "<C-d>zz", { desc = 'Jump down half screen' })
 vim.keymap.set('n', "<C-u>", "<C-u>zz", { desc = 'Jump up half screen' })
 vim.keymap.set('n', "<leader>f", function() vim.lsp.buf.format() end, { desc = 'LSP format' })
-vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+vim.keymap.set("n", "<leader>rr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = 'Replace in current buffer' })
 -- [[ Diagnostic keymaps ]]
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
+vim.keymap.set('n', '<C-[>', vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
+vim.keymap.set('n', '<C-[>', vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
+vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
+vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, { desc = "Open diagnostics list" })

@@ -41,26 +41,22 @@ return {
 						left = 1, right = 0 }
 				},
 				{ "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
-				-- stylua: ignore
 				{
 					function() return require("nvim-navic").get_location() end,
 					cond = function() return package.loaded["nvim-navic"] and require("nvim-navic").is_available() end,
 				},
 			},
 			lualine_x = {
-				-- stylua: ignore
 				{
 					function() return require("noice").api.status.command.get() end,
 					cond = function() return package.loaded["noice"] and require("noice").api.status.command.has() end,
 					color = require('utils').fg("Statement"),
 				},
-				-- stylua: ignore
 				{
 					function() return require("noice").api.status.mode.get() end,
 					cond = function() return package.loaded["noice"] and require("noice").api.status.mode.has() end,
 					color = require('utils').fg("Constant"),
 				},
-				-- stylua: ignore
 				{
 					function() return "  " .. require("dap").status() end,
 					cond = function() return package.loaded["dap"] and require("dap").status() ~= "" end,

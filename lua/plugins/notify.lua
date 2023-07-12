@@ -2,7 +2,7 @@ return {
 	"rcarriga/nvim-notify",
 	keys = {
 		{
-			"<leader>un",
+			"<leader>uc",
 			function()
 				require("notify").dismiss({ silent = true, pending = true })
 			end,
@@ -17,6 +17,7 @@ return {
 		max_width = function()
 			return math.floor(vim.o.columns * 0.75)
 		end,
+		background_colour = '#eb6f92',
 	},
 	init = function()
 		vim.notify = require("notify")
