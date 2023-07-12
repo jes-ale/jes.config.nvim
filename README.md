@@ -1,8 +1,9 @@
-Personal nvim configuration havely inspired by Kickstart and LazyVim, not only on the plugins selection but the mental model of "plug and play" configurations for certain plugins.
+### Personal nvim configuration havely inspired by Kickstart and LazyVim, not only on the plugins selection but the mental model of "plug and play" configurations for certain plugins.
 
-Actively updated and further customizated.
-Not recomendes for anyone to install unless you like the "simple" file structure i got going on.
-The configurations and specialy the keymaps are strongly opininated.
+#### *** Disclaimer *** 
+##### - For advanced users i do not recomended this configuration unless you like the "simple" file structure i got going on.
+##### - The configurations and specialy the keymaps are strongly opininated.
+##### - Actively updated and further customizated.
 
 ## Requeriments: 
 ### Neovim > 0.9.0 < 0.10.0 (until fzf current buffer telescope fixes the deprecated function cuz it's going to breake probably at some point in the near future)
