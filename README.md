@@ -26,7 +26,7 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```bash
 sudo apt install fd-find
 ```
-#### C compiler for treesitter (fzf)
+#### C compiler
 ```bash
 sudo apt install gcc
 ```
