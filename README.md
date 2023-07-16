@@ -20,7 +20,6 @@ pnpm setup
 pnpm install -g typescript typescript-language-server
 ```
 #### [Live grep](https://github.com/BurntSushi/ripgrep)
-#### Standalone binary with no dependencies so we install with dpkg instead of gdebi or other tool.
 ```bash
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
