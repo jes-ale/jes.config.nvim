@@ -37,4 +37,4 @@ sudo apt install gcc
 sudo apt install libstdc++-12-dev
 ```
 #### [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
-#### Install a font and configure it to the gnome terminal (or other terminal)
+#### Install a font and configure it to the terminal
