@@ -1,6 +1,4 @@
 ##### Personal nvim configuration inspired by [Kickstart, LazyVim] plugins and settings.
-
-#### *** Disclaimer *** 
 ##### - For advanced users i do not recomended this configuration unless you like the "simple" file structure i got going on.
 ##### - The configurations and the keymaps are strongly opinionated.
 ##### - Actively updated and further customizated.
