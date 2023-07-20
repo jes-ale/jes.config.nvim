@@ -38,3 +38,8 @@ sudo apt install libstdc++-12-dev
 ```
 #### [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 #### Install a font and configure it to the terminal
+#### Sync clipboard OS and Nvim, xclip if using X11 or wl-copy and wl-paste if using Wayland
+```bash
+sudo apt install wl-clipboard
+sudot apt install xclip
+```
