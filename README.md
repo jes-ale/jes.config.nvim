@@ -2,7 +2,7 @@
 ##### - The configurations and the keymaps are strongly opinionated.
 
 ### Requeriments: 
-#### I'm currently using Debian 12 stable
+#### Bash commands tested using Debian 12 stable
 #### Neovim = 0.9.1
 ```bash
 sudo apt install snapd
