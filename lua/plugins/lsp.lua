@@ -43,6 +43,7 @@ return {
 			cssls = {},
 			tailwindcss = {},
 			pylsp = {},
+			sqlls = {},
 			gradle_ls = {},
 			kotlin_language_server = {},
 			lua_ls = {
