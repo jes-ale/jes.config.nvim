@@ -23,6 +23,7 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 ```
 ```bash
+sudo su
 corepack enable
 pnpm setup
 pnpm install -g typescript typescript-language-server
