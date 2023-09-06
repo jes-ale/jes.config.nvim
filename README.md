@@ -13,7 +13,7 @@ sudo apt install python3-neovim
 #### LSPs
 ```bash
 sudo su
-curl -fsSL https://deb.nodesource.com/setup_lts.x
+curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 sudo apt install -y nodejs
 corepack enable
 pnpm setup
