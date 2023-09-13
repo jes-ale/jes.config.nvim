@@ -17,7 +17,6 @@ sudo snap install nvim --channel=latest/stable --classic
 sudo apt install python3-neovim
 ```
 #### LSPs
-##### First install node
 ```bash
 sudo apt-get update
 ```
