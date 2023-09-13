@@ -22,6 +22,11 @@ sudo apt install python3-neovim
 sudo apt-get update
 ```
 ```bash
+sudo apt install python3
+sudo apt-get install python3-pylsp
+sudo apt install python3.11-venv
+```
+```bash
 sudo apt-get install -y ca-certificates curl gnupg
 ```
 ```bash
