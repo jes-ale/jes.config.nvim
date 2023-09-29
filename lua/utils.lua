@@ -39,6 +39,7 @@ function M.get_root()
 end
 
 -- NOTE: yanked from LazyVim repo
+-- NOTE: I dont even remember what this does
 function M.fg(name)
   ---@type {foreground?:number}?
   local hl = vim.api.nvim_get_hl and vim.api.nvim_get_hl(0, { name = name }) or vim.api.nvim_get_hl_by_name(name, true)
