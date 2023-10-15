@@ -72,6 +72,7 @@ return {
 				analyze_open_documents_only = false,
 			},
 			rust_analyzer = {},
+			dockerls = {},
 			bashls = {},
 			tsserver = {},
 			volar = {},
