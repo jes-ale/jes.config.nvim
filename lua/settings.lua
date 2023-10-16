@@ -55,3 +55,30 @@ vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, { desc = "Open diag
 -- Dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+vim.keymap.set("v", "<Tab>", function()
+  indent_lines_by_type(">")
+end, { silent = true, noremap = true })
+vim.keymap.set("v", "<S-Tab>", function()
+  indent_lines_by_type("<")
+end, { silent = true, noremap = true })
+
+function indent_lines_by_type(indent_type)
+  local line_start = vim.fn.line("v")
+  local line_end = vim.fn.line(".")
+  local current_mode = vim.api.nvim_get_mode()
+
+  local indent = function(start, stop, ind_type)
+    vim.cmd(start .. "," .. stop .. ind_type)
+  end
+
+  if line_start == line_end then
+    vim.cmd(indent_type)
+  else
+    local lines = math.abs(line_end - line_start)
+    local direction = line_start >= line_end and "j" or "k"
+
+    indent(line_start, line_end, indent_type)
+    vim.api.nvim_win_set_cursor(0, { line_start, 0 })
+    vim.api.nvim_input(current_mode.mode .. lines .. direction)
+  end
+end
