@@ -34,7 +34,7 @@ return {
 		end
 		local servers = {
 			omnisharp = {
-				cmd = { "dotnet", "~/.local/share/bin/omnisharp/OmniSharp.dll" },
+				cmd = { "dotnet", "/usr/local/bin/omnisharp/OmniSharp.dll" },
 				-- Enables support for reading code style, naming convention and analyzer
 				-- settings from .editorconfig.
 				enable_editorconfig_support = true,
