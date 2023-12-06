@@ -57,6 +57,7 @@ corepack enable
 #### Setup pnpm
 ```bash
 pnpm setup || { echo "Failed to setup pnpm."; }
+source $HOME/.bashrc
 ```
 
 #### Install TypeScript and TypeScript Language Server
