@@ -7,22 +7,22 @@
 #### Install Essentials
 ```bash
 sudo apt update || { echo "Failed to update repositories.";  }
-sudo apt install curl || { echo "Failed to install curl.";  }
-sudo apt install snapd || { echo "Failed to install snapd."; }
-sudo snap install core || { echo "Failed to install snap core."; }
+sudo apt install curl -y || { echo "Failed to install curl.";  }
+sudo apt install snapd -y || { echo "Failed to install snapd."; }
+sudo snap install core -y || { echo "Failed to install snap core."; }
 ```
 
 #### Install Neovim and Dependencies
 ```bash
 sudo snap install nvim --channel=latest/stable --classic || { echo "Failed to install nvim via snap."; }
-sudo apt install python3-neovim || { echo "Failed to install python3-neovim."; }
+sudo apt install python3-neovim -y || { echo "Failed to install python3-neovim."; }
 ```
 
 #### LSP Setup for Python
 ```bash
-sudo apt install python3 || { echo "Failed to install Python 3."; exit 1; }
-sudo apt-get install python3-pylsp || { echo "Failed to install python3-pylsp."; }
-sudo apt install python3.11-venv || { echo "Failed to install python3.11-venv."; }
+sudo apt install python3 -y || { echo "Failed to install Python 3."; exit 1; }
+sudo apt install python3-pylsp -y || { echo "Failed to install python3-pylsp."; }
+sudo apt install python3.11-venv -y || { echo "Failed to install python3.11-venv."; }
 ```
 
 #### Install OmniSharp for C#
@@ -39,19 +39,18 @@ rm dotnet-sdk-6.0.417-linux-x64.tar.gz || { echo "Failed to remove temporary fil
 
 #### Configure NodeSource Repository for Node.js
 ```bash
-sudo apt-get install -y ca-certificates curl gnupg || { echo "Failed to install required packages."; }
+sudo apt install -y ca-certificates curl gnupg || { echo "Failed to install required packages."; }
 sudo mkdir -p /etc/apt/keyrings || { echo "Failed to create directory /etc/apt/keyrings."; }
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg || { echo "Failed to download and setup NodeSource GPG key.";  }
 NODE_MAJOR=20
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list || { echo "Failed to add NodeSource repository."; }
-sudo apt-get install nodejs -y || { echo "Failed to install Node.js."; exit 1; }
+sudo apt install nodejs -y || { echo "Failed to install Node.js."; }
 ```
 
 #### Enable corepack (interactive step)
 ```bash
 sudo su
 corepack enable
-exit
 ```
 
 #### Setup pnpm
@@ -72,17 +71,17 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb || { echo "Failed to install ripgrep."; }
 
 #### Install File search (fd)
 ```bash
-sudo apt install fd-find || { echo "Failed to install fd-find.";  }
+sudo apt install fd-find -y || { echo "Failed to install fd-find.";  }
 ```
 
 #### Install C compiler
 ```bash
-sudo apt install gcc || { echo "Failed to install C compiler."; }
+sudo apt install gcc -y || { echo "Failed to install C compiler."; }
 ```
 
 #### Install libstdc++
 ```bash
-sudo apt install libstdc++-12-dev || { echo "Failed to install libstdc++-12-dev.";  }
+sudo apt install libstdc++-12-dev -y || { echo "Failed to install libstdc++-12-dev.";  }
 ```
 
 #### Install Nerd Fonts
@@ -93,12 +92,12 @@ sudo apt install libstdc++-12-dev || { echo "Failed to install libstdc++-12-dev.
 
 #### For Wayland
 ```bash
-sudo apt install wl-clipboard || { echo "Failed to install wl-clipboard."; }
+sudo apt install wl-clipboard -y || { echo "Failed to install wl-clipboard."; }
 ```
 
 #### For X11
 ```bash
-sudo apt install xclip || { echo "Failed to install xclip.";  }
+sudo apt install xclip -y || { echo "Failed to install xclip.";  }
 ```
 
 #### Clean up temporary files
