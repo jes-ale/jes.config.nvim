@@ -30,7 +30,7 @@ sudo apt install python3.11-venv || { echo "Failed to install python3.11-venv.";
 curl -LO https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.10/omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to download OmniSharp.";  }
 tar -xzf omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to extract OmniSharp."; }
 sudo mv omnisharp /usr/local/bin/ || { echo "Failed to move OmniSharp to /usr/local/bin/."; }
-rm omnisharp-linux-x64.tar.gz || { echo "Failed to remove temporary files."; }
+rm omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to remove temporary files."; }
 sudo apt-get install -y dotnet-sdk-6.0 || { echo "Failed to install .NET SDK."; }
 ```
 
