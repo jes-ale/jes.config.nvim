@@ -30,8 +30,11 @@ sudo apt install python3.11-venv || { echo "Failed to install python3.11-venv.";
 sudo mkdir /usr/local/bin/omnisharp
 curl -LO https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.10/omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to download OmniSharp.";  }
 sudo tar -xzf omnisharp-linux-arm64-net6.0.tar.gz -C /usr/local/bin/omnisharp || { echo "Failed to extract OmniSharp."; }
+sudo mkdir /usr/local/bin/dotnet
+curl -LO https://download.visualstudio.microsoft.com/download/pr/1cac4d08-3025-4c00-972d-5c7ea446d1d7/a83bc5cbedf8b90495802ccfedaeb2e6/dotnet-sdk-6.0.417-linux-x64.tar.gz || { echo "Failed to download dotnet sdk.";  }
+sudo tar -xzf dotnet-sdk-6.0.417-linux-x64.tar.gz -C /usr/local/bin/dotnet || { echo "Failed to extract OmniSharp."; }
 rm omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to remove temporary files."; }
-sudo apt install -y dotnet-sdk-6.0 || { echo "Failed to install .NET SDK."; }
+rm dotnet-sdk-6.0.417-linux-x64.tar.gz || { echo "Failed to remove temporary files."; }
 ```
 
 #### Configure NodeSource Repository for Node.js
