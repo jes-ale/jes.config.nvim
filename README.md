@@ -31,7 +31,7 @@ sudo mkdir /usr/local/bin/omnisharp
 curl -LO https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.10/omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to download OmniSharp.";  }
 sudo tar -xzf omnisharp-linux-arm64-net6.0.tar.gz -C /usr/local/bin/omnisharp || { echo "Failed to extract OmniSharp."; }
 rm omnisharp-linux-arm64-net6.0.tar.gz || { echo "Failed to remove temporary files."; }
-sudo apt-get install -y dotnet-sdk-6.0 || { echo "Failed to install .NET SDK."; }
+sudo apt install -y dotnet-sdk-6.0 || { echo "Failed to install .NET SDK."; }
 ```
 
 #### Configure NodeSource Repository for Node.js
