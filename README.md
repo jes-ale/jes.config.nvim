@@ -41,10 +41,11 @@ rm dotnet-sdk-6.0.417-linux-x64.tar.gz || { echo "Failed to remove temporary fil
 ```bash
 sudo apt install -y ca-certificates curl gnupg || { echo "Failed to install required packages."; }
 sudo mkdir -p /etc/apt/keyrings || { echo "Failed to create directory /etc/apt/keyrings."; }
-curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg || { echo "Failed to download and setup NodeSource GPG key.";  }
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg || { echo "Failed to download and setup NodeSource GPG key."; }
 NODE_MAJOR=20
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list || { echo "Failed to add NodeSource repository."; }
-sudo apt install nodejs -y || { echo "Failed to install Node.js."; }
+sudo apt-get update || { echo "Failed to update apt."; }
+sudo apt-get install -y nodejs="$NODE_MAJOR".* || { echo "Failed to install Node.js."; }
 ```
 
 #### Enable corepack (interactive step)
