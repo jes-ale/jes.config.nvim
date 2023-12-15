@@ -9,7 +9,7 @@
 sudo apt update || { echo "Failed to update repositories.";  }
 sudo apt install curl -y || { echo "Failed to install curl.";  }
 sudo apt install snapd -y || { echo "Failed to install snapd."; }
-sudo snap install core -y || { echo "Failed to install snap core."; }
+sudo snap install core || { echo "Failed to install snap core."; }
 ```
 
 #### Install Neovim and Dependencies
