@@ -3,6 +3,7 @@
 
 #### Requirements:
 ##### Debian based distro. Tested on ubuntu 18 and Debian 12.
+##### Not working on wsl
 
 #### Install Essentials
 ```bash
